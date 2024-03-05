@@ -12,6 +12,9 @@ Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
 
 Infine stampa separatamente i 3 array
 
+snack 2
+A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l’iniziale maiuscola.
+Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘Paperino’]
 
 SNACK 3
 
