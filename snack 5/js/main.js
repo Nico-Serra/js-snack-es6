@@ -46,3 +46,7 @@ let [,,{nome}] = bici
 let [,,{peso}] = bici
 
 console.log(`la bici con il peso minore è ${nome} con il peso di ${peso} kg`);
+
+let markup = `la bici con il peso minore è ${nome} con il peso di ${peso} kg`;
+
+document.querySelector('.container').insertAdjacentHTML('beforeend', markup)
