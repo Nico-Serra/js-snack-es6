@@ -76,6 +76,14 @@ const teams = [
     },
 ]
 
+/*teams.forEach(team => {
+    let markup = `<h2>SQUADRA : ${team.name}</h2>
+    <p>Punti in classifica : ${team.points}</p>
+    <p>Falli subiti: ${team.foulSuffered}</p>`
+
+    document.querySelector('.container').insertAdjacentHTML('beforeend', markup)
+})*/
+
 console.log(teams);
 
 /*const newTeams = teams.map(team => {
@@ -89,17 +97,25 @@ console.log(teams);
 
 //const newTeams = teams.map(team => team.name + ' ' + `Falli subiti = ${team.foulSuffered}`)
 
-let [{names}] = teams
-let [{foulSuffered}] = teams
+
 
 const newTeams = teams.map(team => {
-    names = team.name
-    foulSuffered = team.foulSuffered
-    
-    return names + ' ' + foulSuffered
+    let {name, foulSuffered} = team
+
+    return {
+        name: name,
+        foulSuffered: foulSuffered, 
+    }
 })
 
 console.log(newTeams);
+
+newTeams.forEach(newTeam => {
+    let markup = `<h2>SQUADRA : ${newTeam.name}</h2>
+    <p>Falli subiti: ${newTeam.foulSuffered}</p>`
+
+    document.querySelector('.container').insertAdjacentHTML('beforeend', markup)
+})
 
 
 
