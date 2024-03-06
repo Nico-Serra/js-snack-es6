@@ -72,8 +72,8 @@ const driverList = persons.map(function(person){
     if (person.age >= 18) {
         driver = 'puo guidare perche è maggiorenne'
     }else{driver = 'non puo guidare perche è minorenne'}
-    const string = `${person.name} ${person.surname} ${driver}`
-    return string
+    const sentence = `${person.name} ${person.surname} ${driver}`
+    return sentence
 })
 
 console.log(driverList);
